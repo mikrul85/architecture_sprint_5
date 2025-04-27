@@ -1,0 +1,1 @@
+Лог Rasa находится в файле [rasa.log](./rasa.log)
