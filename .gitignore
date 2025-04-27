@@ -329,6 +329,12 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Virtual environments
+rasa_env/
+venv/
+.env/
+*.py[cod]
+__pycache__/
 rasa_env
 .rasa
 models
