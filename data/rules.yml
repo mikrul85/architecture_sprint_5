@@ -1,13 +1,27 @@
 version: "3.1"
 
 rules:
+  - rule: Приветствие
+    steps:
+      - intent: greet
+      - action: utter_greet
 
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - rule: Ответ на вопрос об архитектуре
+    steps:
+      - intent: ask_architecture
+      - action: utter_architecture_response
+
+  - rule: Ответ про реализацию микросервисов
+    steps:
+      - intent: ask_microservices_implementation
+      - action: utter_microservices_implementation
+
+  - rule: Request additional information
+    steps:
+      - intent: request_info
+      - action: utter_ask_more
